@@ -3,9 +3,9 @@ import { Rnd } from 'react-rnd'
 import "./window.scss"
 import { RiCloseLine, RiExpandDiagonalLine, RiSubtractLine } from '@remixicon/react'
 
-const MacWindow = () => {
+const MacWindow = ({ children }) => {
     return (
-        <Rnd>
+        <Rnd default={{ width: "50vw", height: "70vh", x: 400, y: 200 }}>
             <div className="window">
                 <div className="nav">
                     <div className="dots">
@@ -23,7 +23,9 @@ const MacWindow = () => {
                         <p>nityaprakash -zsh</p>
                     </div>
                 </div>
-                <div className="main-content"></div>
+                <div className="main-content">
+                    {children}
+                </div>
             </div>
         </Rnd>
     )

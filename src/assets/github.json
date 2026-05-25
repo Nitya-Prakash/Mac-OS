@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "title": "TaskFlow",
+    "description": "A full-stack task management application with authentication, drag-and-drop boards, and team collaboration features.",
+    "tags": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    "repolink": "https://github.com/johndoe/taskflow",
+    "demolink": "https://taskflow-demo.vercel.app"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "title": "ShopKart",
+    "description": "An e-commerce web app with product listings, cart management, filtering, and responsive UI.",
+    "tags": ["React", "JavaScript", "CSS", "Firebase"],
+    "repolink": "https://github.com/johndoe/shopkart",
+    "demolink": "https://shopkart-demo.netlify.app"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "title": "AI Resume Analyzer",
+    "description": "An AI-powered resume analyzer that provides ATS score and improvement suggestions.",
+    "tags": ["Next.js", "OpenAI API", "TypeScript", "Tailwind CSS"],
+    "repolink": "https://github.com/johndoe/ai-resume-analyzer",
+    "demolink": "https://resume-analyzer-ai.vercel.app"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "title": "DevConnect",
+    "description": "A social platform for developers to connect, share posts, and collaborate on projects.",
+    "tags": ["MERN", "Socket.io", "Redux", "JWT"],
+    "repolink": "https://github.com/johndoe/devconnect",
+    "demolink": "https://devconnect-app.vercel.app"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "title": "Crypto Tracker",
+    "description": "A cryptocurrency tracking dashboard with live charts, market trends, and watchlists.",
+    "tags": ["React", "Chart.js", "REST API", "Bootstrap"],
+    "repolink": "https://github.com/johndoe/crypto-tracker",
+    "demolink": "https://crypto-tracker-live.netlify.app"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "title": "CodeSync",
+    "description": "A real-time collaborative code editor with syntax highlighting and live sharing.",
+    "tags": ["React", "Node.js", "Socket.io", "Monaco Editor"],
+    "repolink": "https://github.com/johndoe/codesync",
+    "demolink": "https://codesync-editor.vercel.app"
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "title": "FitTrack",
+    "description": "A fitness tracking application for workouts, calorie counting, and health analytics.",
+    "tags": ["Vue.js", "Firebase", "Chart.js", "SCSS"],
+    "repolink": "https://github.com/johndoe/fittrack",
+    "demolink": "https://fittrack-app.netlify.app"
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    "title": "PortfolioX",
+    "description": "A modern developer portfolio template with animations, dark mode, and CMS integration.",
+    "tags": ["Next.js", "Framer Motion", "Tailwind CSS", "Sanity"],
+    "repolink": "https://github.com/johndoe/portfoliox",
+    "demolink": null
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1484417894907-623942c8ee29",
+    "title": "EduLearn",
+    "description": "An online learning platform with video courses, quizzes, and student dashboards.",
+    "tags": ["Angular", "Node.js", "MongoDB", "Material UI"],
+    "repolink": "https://github.com/johndoe/edulearn",
+    "demolink": "https://edulearn-platform.vercel.app"
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931",
+    "title": "TravelMate",
+    "description": "A travel planning application with itinerary creation, hotel booking, and map integration.",
+    "tags": ["React", "TypeScript", "Google Maps API", "Styled Components"],
+    "repolink": "https://github.com/johndoe/travelmate",
+    "demolink": "https://travelmate-app.netlify.app"
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931",
+    "title": "TravelMate",
+    "description": "A travel planning application with itinerary creation, hotel booking, and map integration.",
+    "tags": ["React", "TypeScript", "Google Maps API", "Styled Components"],
+    "repolink": "https://github.com/johndoe/travelmate",
+    "demolink": "https://travelmate-app.netlify.app"
+  }
+]

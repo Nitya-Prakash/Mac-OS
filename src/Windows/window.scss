@@ -1,6 +1,5 @@
 .window {
-  height: 300px;
-  width: 500px;
+  height: 100%;
   border-radius: 0.5rem;
   cursor: default;
   font-family:
@@ -19,6 +18,7 @@
   background-color: #1e1e1e;
 
   .nav {
+    // width: 100%;
     color: #a3a3a3;
     display: flex;
     align-items: center;
@@ -29,6 +29,7 @@
     padding-block: 0.5rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+    // position: fixed;
 
     .dots {
       display: flex;
@@ -70,5 +71,9 @@
     .title {
       font-size: 0.75rem;
     }
+  }
+
+  .main-content {
+    height: 100%;
   }
 }
