@@ -12,6 +12,7 @@
   backdrop-filter: blur(5px);
   outline: 0.01rem solid rgba(255, 255, 255, 0.589);
   transition: all linear 0.2s;
+  z-index: 999;
 
   .icon {
     display: flex;

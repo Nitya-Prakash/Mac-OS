@@ -5,7 +5,7 @@ import { RiCloseLine, RiExpandDiagonalLine, RiSubtractLine } from '@remixicon/re
 
 const MacWindow = ({ children }) => {
     return (
-        <Rnd default={{ width: "50vw", height: "70vh", x: 400, y: 200 }}>
+        <Rnd default={{ width: "50vw", height: "70vh", x: 350, y: 100 }}>
             <div className="window">
                 <div className="nav">
                     <div className="dots">

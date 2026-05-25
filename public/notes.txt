@@ -1,0 +1,165 @@
+/**
+ * @file: profile.config.ts
+ * @author: Nitya Prakash
+ * @summary: A creative full-stack developer focused on scalable web apps, AI products, and modern UI engineering.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "React.js",      // 95%
+    "TailwindCSS",   // 95%
+    "JavaScript",    // 90%
+    "GSAP",          // 88%
+    "HTML5",         // 100%
+    "CSS3",          // 100%
+    "Vite",          // 85%
+  ],
+
+  backend: [
+    "Node.js",       // 75%
+    "Express.js",    // 75%
+    "MongoDB",       // 70%
+    "REST APIs",     // 78%
+  ],
+
+  emergingTech: [
+    "AI/ML",         // Exploring
+    "Blockchain",    // Beginner
+    "Automation",    // Learning
+  ],
+
+  tools: [
+    "Git",
+    "GitHub",
+    "Figma",
+    "Linux",
+    "Postman",
+    "VS Code"
+  ]
+};
+
+// --------------------------------------------------
+// 2. PROJECTS & BUILD LOG
+// --------------------------------------------------
+
+class DeveloperJourney {
+
+  /**
+   * CURRENT FOCUS
+   * @period 2025 - Present
+   */
+  public async AI_Automation_Lab(): Promise<Build> {
+    const mission = "Building AI-powered products and automation systems";
+
+    const assistant = await ai.create({
+      name: "J.A.R.V.I.S",
+      features: [
+        "Voice Recognition",
+        "AI Conversations",
+        "Personal Memory",
+        "Face/Object Recognition",
+        "Home Automation"
+      ]
+    });
+
+    const goal = "Create a private and intelligent personal AI ecosystem";
+
+    return { mission, assistant, goal };
+  }
+
+  /**
+   * FEATURED PROJECT
+   * @period 2024 - Present
+   */
+  public ShopKart_2_0(): void {
+    this.type = "React E-Commerce Platform";
+    this.focus = "Frontend Architecture + UI Engineering";
+
+    // Built a modern e-commerce interface using React
+    // Implemented reusable components and responsive layouts
+    // Used Local Storage for product persistence and cart handling
+  }
+
+  /**
+   * UI/UX PROJECTS
+   * @period 2024 - Present
+   */
+  public FIGMA_Projects(): void {
+    this.role = "UI/UX Designer + Frontend Developer";
+    this.focus = "Modern Interfaces & User Experience";
+
+    // Designed clean UI systems and responsive layouts in Figma
+    // Converted design systems into functional React applications
+    // Focused on animations, usability, and aesthetic consistency
+  }
+
+  /**
+   * FRONTEND EXPERIMENTS
+   * @period 2024
+   */
+  public Creative_Development(): void {
+    this.stack = ["React", "GSAP", "TailwindCSS"];
+
+    // Built smooth animated landing pages
+    // Practiced advanced UI interactions and transitions
+    // Optimized responsiveness and performance
+  }
+}
+
+// --------------------------------------------------
+// 3. HACKATHONS & ACHIEVEMENTS
+// --------------------------------------------------
+
+interface InnovationTrack {
+  event: string;
+  domain: string;
+  status: string;
+}
+
+const innovationJourney: InnovationTrack[] = [
+  {
+    event: "Smart India Hackathon (SIH)",
+    domain: "Problem Solving + Innovation",
+    status: "Participant"
+  },
+  {
+    event: "Webtronics Hackathon",
+    domain: "Debugging & Problem Solving",
+    status: "3rd Place Winner"
+  },
+  {
+    event: "Startup Vision",
+    domain: "AI Products + Web Agency",
+    status: "Building"
+  }
+];
+
+// --------------------------------------------------
+// 4. EDUCATION & LEARNING PATH
+// --------------------------------------------------
+
+const education = new Map<string, string>([
+  ["B.Tech", "Computer Science / Information Technology"],
+  ["Learning Path", "Full Stack Web Development (MERN)"]
+]);
+
+// --------------------------------------------------
+// 5. DEVELOPER STATUS
+// --------------------------------------------------
+
+export default new DeveloperJourney();
+
+# TERMINAL OUTPUT
+# ---------------------------------------
+$ nitya --status
+> Role: Full-Stack Developer
+> Focus: MERN + AI Products
+> Current Mission: Building J.A.R.V.I.S
+> Startup Mode: ACTIVE
+> Learning: Backend Systems & Scalable Architecture
+> Portfolio Assets... [||||||||||] 100%
+> Ready To Build.
