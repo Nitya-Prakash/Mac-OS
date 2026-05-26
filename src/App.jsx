@@ -5,6 +5,8 @@ import Nav from './components/Nav'
 import Github from './Windows/Github'
 import Notes from './Windows/Notes'
 import Resume from './Windows/Resume'
+import Spotify from './Windows/Spotify'
+import Cli from './Windows/Cli'
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
       <Github />
       <Notes />
       <Resume />
+      <Spotify />
+      <Cli />
     </main>
   )
 }
