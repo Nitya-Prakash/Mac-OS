@@ -1,45 +1,61 @@
 /**
  * @file: profile.config.ts
- * @author: Nitya Prakash
- * @summary: A creative full-stack developer focused on scalable web apps, AI products, and modern UI engineering.
+ * @author: Nitya Prakash Sahoo
+ * @summary: An Electronics and Telecommunication Engineering student building
+ * web applications and practical AI/ML solutions.
  */
 
 // --------------------------------------------------
-// 1. CORE DEPENDENCIES & SKILLS
+// 1. CORE SKILLS
 // --------------------------------------------------
 
 const TECH_STACK = {
   frontend: [
-    "React.js",      // 95%
-    "TailwindCSS",   // 95%
-    "JavaScript",    // 90%
-    "GSAP",          // 88%
-    "HTML5",         // 100%
-    "CSS3",          // 100%
-    "Vite",          // 85%
+    "React.js",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "EJS",
+    "Vite",
   ],
 
   backend: [
-    "Node.js",       // 75%
-    "Express.js",    // 75%
-    "MongoDB",       // 70%
-    "REST APIs",     // 78%
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "REST APIs",
+    "JWT Authentication",
   ],
 
-  emergingTech: [
-    "AI/ML",         // Exploring
-    "Blockchain",    // Beginner
-    "Automation",    // Learning
+  programming: [
+    "JavaScript",
+    "Python",
+    "C",
+  ],
+
+  aiAndProductivity: [
+    "AI/ML Workflows",
+    "AI Chatbot Integration",
+    "Prompt-Based Productivity",
   ],
 
   tools: [
     "Git",
     "GitHub",
-    "Figma",
-    "Linux",
+    "VS Code",
     "Postman",
-    "VS Code"
-  ]
+    "npm",
+    "Axios",
+    "LaTeX",
+  ],
+
+  strengths: [
+    "Technical Documentation",
+    "Code Documentation",
+    "Testing and Problem Solving",
+    "Project Coordination",
+  ],
 };
 
 // --------------------------------------------------
@@ -47,119 +63,110 @@ const TECH_STACK = {
 // --------------------------------------------------
 
 class DeveloperJourney {
-
-  /**
-   * CURRENT FOCUS
-   * @period 2025 - Present
-   */
-  public async AI_Automation_Lab(): Promise<Build> {
-    const mission = "Building AI-powered products and automation systems";
-
-    const assistant = await ai.create({
-      name: "J.A.R.V.I.S",
-      features: [
-        "Voice Recognition",
-        "AI Conversations",
-        "Personal Memory",
-        "Face/Object Recognition",
-        "Home Automation"
-      ]
-    });
-
-    const goal = "Create a private and intelligent personal AI ecosystem";
-
-    return { mission, assistant, goal };
-  }
-
   /**
    * FEATURED PROJECT
-   * @period 2024 - Present
+   * macOS-inspired portfolio website
    */
-  public ShopKart_2_0(): void {
-    this.type = "React E-Commerce Platform";
-    this.focus = "Frontend Architecture + UI Engineering";
+  public MacOSPortfolio(): void {
+    this.type = "Interactive Portfolio Website";
+    this.stack = ["React.js", "HTML", "CSS"];
 
-    // Built a modern e-commerce interface using React
-    // Implemented reusable components and responsive layouts
-    // Used Local Storage for product persistence and cart handling
+    // Built a macOS-style interface with a dock, menu bar, and application windows.
+    // Added draggable and resizable windows for a desktop-like experience.
+    // Created views for GitHub repositories, notes, resume, Spotify playlist,
+    // and a command-based terminal that lets visitors explore the portfolio.
+    // Linked Calendar, Mail, and LinkedIn to their respective services.
   }
 
   /**
-   * UI/UX PROJECTS
-   * @period 2024 - Present
+   * E-COMMERCE PROJECT
    */
-  public FIGMA_Projects(): void {
-    this.role = "UI/UX Designer + Frontend Developer";
-    this.focus = "Modern Interfaces & User Experience";
+  public ShopKart(): void {
+    this.type = "React E-Commerce Website";
+    this.stack = ["React.js", "JavaScript"];
 
-    // Designed clean UI systems and responsive layouts in Figma
-    // Converted design systems into functional React applications
-    // Focused on animations, usability, and aesthetic consistency
+    // Built product browsing and category-based filtering.
+    // Implemented add-to-cart functionality, address entry, and Buy Now flow.
+    // Focused on a clear and responsive shopping experience.
   }
 
   /**
-   * FRONTEND EXPERIMENTS
-   * @period 2024
+   * UI PROJECT
    */
-  public Creative_Development(): void {
-    this.stack = ["React", "GSAP", "TailwindCSS"];
+  public AppleWebsiteUI(): void {
+    this.type = "Apple Website UI Clone";
+    this.stack = ["HTML5", "CSS3"];
 
-    // Built smooth animated landing pages
-    // Practiced advanced UI interactions and transitions
-    // Optimized responsiveness and performance
+    // Recreated an Apple-inspired website interface.
+    // Focused on page layout, styling, and responsive UI design.
+  }
+
+  /**
+   * AI/ML INTERNSHIP EXPERIENCE
+   */
+  public CTTCInternship(): void {
+    this.role = "AI/ML Intern";
+    this.organization = "Central Tool Room and Training Centre, Bhubaneswar";
+
+    // Applied Python and machine-learning techniques for data processing,
+    // model development, and evaluation.
+    // Built practical experience through experimentation, testing,
+    // and structured problem-solving.
   }
 }
 
 // --------------------------------------------------
-// 3. HACKATHONS & ACHIEVEMENTS
+// 3. ACHIEVEMENTS
 // --------------------------------------------------
 
-interface InnovationTrack {
+interface Achievement {
   event: string;
   domain: string;
-  status: string;
+  result: string;
 }
 
-const innovationJourney: InnovationTrack[] = [
+const achievements: Achievement[] = [
   {
-    event: "Smart India Hackathon (SIH)",
-    domain: "Problem Solving + Innovation",
-    status: "Participant"
+    event: "Avinya 2026 Hackathon, C. V. Raman Global University",
+    domain: "Smart Autonomous Wheelchair",
+    result: "Winner",
   },
   {
-    event: "Webtronics Hackathon",
-    domain: "Debugging & Problem Solving",
-    status: "3rd Place Winner"
+    event: "Webtronics, Silicon Institute of Technology",
+    domain: "Debugging and Problem Solving",
+    result: "3rd Place",
   },
-  {
-    event: "Startup Vision",
-    domain: "AI Products + Web Agency",
-    status: "Building"
-  }
 ];
 
 // --------------------------------------------------
-// 4. EDUCATION & LEARNING PATH
+// 4. EDUCATION
 // --------------------------------------------------
 
 const education = new Map<string, string>([
-  ["B.Tech", "Computer Science / Information Technology"],
-  ["Learning Path", "Full Stack Web Development (MERN)"]
+  ["Degree", "B.Tech in Electronics and Telecommunication Engineering"],
+  ["College", "Trident Academy of Technology, Bhubaneswar"],
+  ["Academic Record", "SGPA: 7.48 (6th Semester)"],
 ]);
 
 // --------------------------------------------------
 // 5. DEVELOPER STATUS
 // --------------------------------------------------
 
+const developerStatus = {
+  role: "Web Developer",
+  focus: "React, full-stack web development, and AI/ML workflows",
+  location: "Bhubaneswar, Odisha",
+  mission: "Building practical, user-focused web applications",
+  learning: "Backend development, documentation, and modern web systems",
+  readyToBuild: true,
+};
+
 export default new DeveloperJourney();
 
-# TERMINAL OUTPUT
-# ---------------------------------------
 $ nitya --status
-> Role: Full-Stack Developer
-> Focus: MERN + AI Products
-> Current Mission: Building J.A.R.V.I.S
-> Startup Mode: ACTIVE
-> Learning: Backend Systems & Scalable Architecture
-> Portfolio Assets... [||||||||||] 100%
+> Role: Web Developer
+> Focus: React, full-stack web development, and AI/ML workflows
+> Location: Bhubaneswar, Odisha
+> Current Mission: Building practical, user-focused web applications
+> Learning: Backend development, documentation, and modern web systems
 > Ready To Build.

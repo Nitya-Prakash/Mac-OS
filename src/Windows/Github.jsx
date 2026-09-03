@@ -9,7 +9,7 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
         <h1>{data.title}</h1>
         <p className='description'>{data.description}</p>
         <div className='tags'>
-            {data.tags.map(tag => <p className='tag'>{tag}</p>)}
+            {data.tags.map((tag, idx) => <p key={idx} className='tag'>{tag}</p>)}
         </div>
         <div className='links'>
             <a href={data.repolink} target='_blank'>Repository</a>
@@ -18,12 +18,18 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
     </div>
 }
 
-const Github = () => {
+const Github = ({ windowName, setWindowState, windowOrder, setWindowOrder, bringToFront }) => {
+    const minX = 0
+    const maxX = 700
+    let x = Math.floor(Math.random() * (maxX - minX) + minX)
+    const minY = 100
+    const maxY = 150
+    let y = Math.floor(Math.random() * (maxY - minY) + minY)
     return (
-        <MacWindow>
+        <MacWindow windowName={windowName} setWindowState={setWindowState} x={x} y={y} windowOrder={windowOrder} setWindowOrder={setWindowOrder} bringToFront={bringToFront}>
             <div className='cards'>
-                {githubData.map(elem => {
-                    return <GitCard data={elem} />
+                {githubData.map((elem, idx) => {
+                    return <GitCard key={idx} data={elem} />
                 })}
             </div>
         </MacWindow>

@@ -3,7 +3,7 @@ import Terminal from 'react-console-emulator'
 import MacWindow from './MacWindow'
 import "./cli.scss"
 
-const Cli = () => {
+const Cli = ({ windowName, setWindowState, windowOrder, setWindowOrder }) => {
 
     const commands = {
 
@@ -64,7 +64,7 @@ const Cli = () => {
         resume: {
             description: 'Resume information',
             fn: () => `
-                Resume available upon request.
+                Resume available on pdf icon in the dock.
 
                 Focused on:
                 - Full Stack Development
@@ -76,22 +76,28 @@ const Cli = () => {
         contact: {
             description: 'Contact details',
             fn: () => `
-                Email: yourmail@gmail.com
-                Location: Rajasthan, India
+                Email: nityaprakashsahoo6776@gmail.com
+                Location: Bhubaneswar, Odisha
                 Status: Open to opportunities`
         },
 
         socials: {
             description: 'Social media links',
             fn: () => `
-                GitHub: github.com/yourusername
-                LinkedIn: linkedin.com/in/yourusername
-                Portfolio: yourportfolio.com`
+                GitHub: github.com/Nitya-Prakash
+                LinkedIn: linkedin.com/in/nitya-prakash-sahoo`
         }
     }
 
+    const minX = 0
+    const maxX = 700
+    let x = Math.floor(Math.random() * (maxX - minX) + minX)
+    const minY = 100
+    const maxY = 150
+    let y = Math.floor(Math.random() * (maxY - minY) + minY)
+
     return (
-        <MacWindow height="50vh" width="35vw">
+        <MacWindow height="50vh" width="35vw" windowName={windowName} setWindowState={setWindowState} x={x} y={y} windowOrder={windowOrder} setWindowOrder={setWindowOrder}>
             <div className="terminal-window">
                 <Terminal
                     commands={commands}

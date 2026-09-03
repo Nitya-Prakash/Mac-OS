@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+  background-color: rgba(142, 142, 142, 0.347);
+  width: fit-content;
+  margin-left: 0.75rem;
+  border-radius: 0.5rem;
+
+  div {
+    font-size: 0.6rem;
+    color: white;
+
+    h2 {
+      cursor: default;
+      padding-inline: 0.3rem;
+      padding-block: 0.2rem;
+    }
+
+    h2:hover {
+      background-color: rgb(71, 91, 220);
+      border-radius: 0.4rem;
+      //   color: black;
+    }
+  }
+}

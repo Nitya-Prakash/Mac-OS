@@ -3,13 +3,26 @@ import { Rnd } from 'react-rnd'
 import "./window.scss"
 import { RiCloseLine, RiExpandDiagonalLine, RiSubtractLine } from '@remixicon/react'
 
-const MacWindow = ({ children, width = "50vw", height = "70vh" }) => {
+const MacWindow = ({ children, width = "50vw", height = "70vh", windowName, setWindowState, x = 350, y = 100, windowOrder, setWindowOrder }) => {
+    const bringToFront = () => {
+        setWindowOrder(prev => [...prev.filter(w => w !== windowName), windowName])
+    }
+
+    const zIndex = windowOrder.indexOf(windowName) + 1
+
     return (
-        <Rnd default={{ width: width, height: height, x: 350, y: 100 }}>
+        <Rnd
+            style={{ zIndex: zIndex }}
+            onMouseDown={bringToFront}
+            default={{ width: width, height: height, x: x, y: y }}>
             <div className="window">
                 <div className="nav">
                     <div className="dots">
-                        <div className="dot red">
+                        <div
+                            onClick={() => {
+                                setWindowState((prevState) => ({ ...prevState, [windowName]: false }))
+                            }}
+                            className="dot red">
                             <p><RiCloseLine size={12} /></p>
                         </div>
                         <div className="dot yellow">
@@ -27,7 +40,7 @@ const MacWindow = ({ children, width = "50vw", height = "70vh" }) => {
                     {children}
                 </div>
             </div>
-        </Rnd>
+        </Rnd >
     )
 }
 
