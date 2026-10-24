@@ -12,7 +12,7 @@ const Resume = ({ windowName, setWindowState, windowOrder, setWindowOrder }) => 
     return (
         <MacWindow windowName={windowName} setWindowState={setWindowState} x={x} y={y} windowOrder={windowOrder} setWindowOrder={setWindowOrder}>
             <div className="resume-window">
-                <iframe src="/public/My Resume.pdf" frameborder="0"></iframe>
+                <iframe src="/My_Resume.pdf" frameborder="0"></iframe>
             </div>
         </MacWindow>
     )
